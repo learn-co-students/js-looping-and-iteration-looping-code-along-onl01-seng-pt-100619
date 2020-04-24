@@ -1,14 +1,13 @@
 // Code your solutions in this file
-let names = [];
-
-let event = "birthday";
 
 function writeCards( names , event) {
-    for (let i = 0; i !== names.length; i++) {
-    console.log(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
-  }
-  return names;
+    let array = [];
 
+    for (let i = 0; i < names.length; i++) {
+    
+    array.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+  }
+ return array;
 }
  
 writeCards(names, event);
