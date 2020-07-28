@@ -1,19 +1,15 @@
 // Code your solutions in this file
 
+function writeCards(array, name) {
+    let newArray = [];
+    for(let i = 0; i < array.length; i++) {
+        newArray.push(`Thank you, ${array[i]}, for the wonderful ${name} gift!`);
+    }
+    return newArray
+}
 
-function writeCards(name, holiday) {
-    let cards = []
-     for(let i = 0; i < name.length; i++) {
-        cards.push(`Thank you, ${name[i]}, for the wonderful ${holiday} gift!`);
-     }
-     return cards;
-     
- }
-
-
- function countDown(number){
-     while(number >= 0) {
-         console.log(number);
-         number--;
-     }
- }
+function countDown(int) {
+    while (int >= 0) {
+        console.log(int--);
+    }
+}
